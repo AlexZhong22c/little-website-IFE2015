@@ -1,0 +1,95 @@
+/*intro*/
+.intro {
+	margin-top: 120px;
+	margin-bottom: 15px;
+	background: none;
+}
+.intro .center-block {
+	background: #fff;
+	position: relative;
+	height: 1000px;
+	z-index: -2;
+	padding-bottom: 150px;
+}
+.intro .center-block img {
+	position: absolute;
+	left: 50%;	
+}
+.intro .intro-pic {
+	border: 10px solid #e9e9e9;
+	margin-top: -80px;
+}
+.intro .timeline {
+	width: 4px;
+	margin-left: -2px;
+	height: 100%;
+	background: #e9e9e9;
+	position: absolute;
+	left: 50%;
+
+	z-index: -1;
+}
+.intro .tel,.intro .school,.intro .bird-pic {
+	width: 100px;
+	height: 100px;
+	margin-left: -50px;
+	margin-top: 200px;
+	border-radius: 100px;
+	border: 5px solid #e9e9e9;
+}
+.intro .school {
+	margin-top: 400px;
+}
+.intro .bird-pic {
+	margin-top: 825px;
+}
+.intro .timeline-left {
+	position: absolute;
+	right: 50%;
+	margin-right: 90px;
+	font-size: 24px;
+}
+.intro .timeline-right,.intro .center{
+	position: absolute;
+	left: 50%;
+	margin-left: 90px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #595959;
+	line-height: 1.5;
+}
+.intro .center {
+	margin-left: 10px;
+}
+.myname {
+	margin-top: 150px;
+}
+.mycontact {
+	margin-top: 320px;
+}
+.myedu {
+	margin-top: 490px;
+}
+.myintern {
+	margin-top: 915px;
+}
+.timeline-right p {
+	text-indent: 2em;
+	width: 290px;
+
+	position: relative;
+	top: -20px;
+}
+.timeline-right ul {
+	margin-top: 50px;
+}
+.center li {
+	margin-left: -39px;
+	margin-top: 58px;
+	background: #fff;
+	/*li是啥元素？居然能这样！*/
+	border-radius: 17px;
+	border: 5px solid #e9e9e9;
+	padding: 3px 8px;
+	text-align: center;
+}

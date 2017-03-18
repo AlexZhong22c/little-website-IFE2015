@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-align: center;
+	text-decoration: none;
+}
+body {
+	background: #E9E9E9;
+}
+ul {
+	list-style: none;
+}
+.center-block {
+	width: 980px;
+	margin: 0 auto;
+}
+
+
+
+/*闭合浮动：http://www.iyunlu.com/view/css-xhtml/55.html*/
+/*比overflow:hidden好的好方法：*/
+/*为了兼容性把.clearfix:bofore也写上了*/
+.clearfix:before,.clearfix:after{
+	content: " ";
+	display: table;
+}
+/*原本ul不包裹任何东西，因为儿子都浮动了，所以ul的背景就不能显示出来*/
+/*利用了after伪类在元素后面插入一个空格然后清除浮动，使ul把子容器都包裹进来了*/
+.clearfix:after{
+	
+	clear: both;
+}
+
+/*这个菜单是对IE6IE7不太友好的：*/
+.clearfix{
+	zoom:1;/*强制刷新，针对IE的清楚浮动(trigger hasLayout)*/
+}
+
+
+
+
+/* header */
+.header {
+	width: 100%;
+	background-color: #8968CD;
+	position: relative;
+}
+.header .center-block {
+	height: 80px;
+	background-color: #8968CD;
+	position: relative;
+}
+
+.header .center-block img {
+	display: block;
+	float: left;
+	height: 80px;
+	width: 80px;
+}
+.header .center-block ul {
+	position: absolute;
+	bottom: 5px;
+	right: 20px;
+}
+.header .center-block ul li {
+	float: left;
+	padding: 0 5px;
+}
+.header .center-block ul li a {
+	color: #3f3f3f;
+	font-weight: bold;
+
+	display: block;
+}
+.header .center-block ul li a:hover {
+	color: White;
+	font-weight: bold;
+}
+#git-logo {
+	display: block;
+	
+	position: absolute;
+	right: 1px;
+	bottom: 0;
+}
+@media (max-width: 980px) {
+	#git-logo {
+		visibility: hidden;
+	}
+}
+
+/*intro*/
+.intro .intro-pic {
+	margin-left: -80px;
+	margin-top: -80px;
+	width: 160px;
+	height: 160px;
+	border-radius: 90px;
+}
+.intro .center-block img {
+	position: absolute;
+	left: 50%;	
+}
+
+/*footer*/
+.footer {
+	background: #000;
+}
+.footer .center-block .footer-head {
+	border-bottom: 1px solid White;
+}
+.footer .center-block .footer-head ul {
+	display: block;
+	width: 250px;
+	margin: 0 auto;
+	height: 20px;
+	padding: 15px;
+}
+.footer .center-block .footer-head li {
+	float: left;
+	width: 25%;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.5;
+}
+.footer .center-block .footer-head li a {
+	color: White;
+}
+.footer .center-block .footer-head li a:hover {
+	color: #f0f;
+}
+.footer .center-block .footer-content {
+	margin-top: 25px;
+	overflow: hidden;
+}
+h3 {
+	text-align: center;
+	color: White;
+}
+.footer .center-block .footer-content .link {
+	float: left;
+	width: 20%;
+}
+.footer .center-block .footer-content ul {
+	width: 100%;
+	height: 150px;
+	margin-top: 30px;
+}
+.footer .center-block .footer-content li {
+	text-align: center;
+	color: White;
+	height: 25%;
+}
+.footer .center-block .footer-content a:hover {
+	color: #f0f;
+}
+.footer .copyright p {
+	text-align: center;
+}
+.footer .copyright a {
+	margin-top: 15px;
+	display: block;
+	text-align: center;
+}

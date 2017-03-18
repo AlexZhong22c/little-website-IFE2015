@@ -1,0 +1,93 @@
+/* banner */
+.banner {
+	margin-top: 3px;
+
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+	
+}
+.banner img {
+	/*display: block;*/
+	width: 100%;
+	/*height这句话让图片只呈现上面的部分*/
+	height: 500px;
+}
+.banner .text-wrap {
+	/*用于布局的CSS style见于html标签*/
+}
+.banner .text {
+	width: 280px;
+	height: auto;
+	padding:15px;
+	/*用于布局的CSS style见于html标签*/
+	
+	/*background:*/
+	background: -moz-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.5) 75%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.7)), color-stop(75%,rgba(255,255,255,0.5)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.5) 75%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.5) 75%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.5) 75%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.5) 75%,rgba(255,255,255,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+h1 {
+	font-size: 16px;
+	line-height: 2;
+	text-align: center;
+}
+p {
+	color: #595959;
+}
+
+/*content*/
+.content {
+	padding-bottom: 200px;
+}
+.content .center-block table {
+	/*如果不加这个很难控制td宽度*/
+	border-collapse: collapse;
+	border-spacing: 0;
+
+}
+.content .center-block table .isolate {
+	background:#3f3f3f;
+	width: 10px;
+}
+.content .center-block table .showblock {
+	vertical-align: top;
+	background: #fff;
+	width: 320px;
+}
+.content .center-block table img {
+	display: block;
+	width: 300px;
+	height: 180px;
+	padding: 10px;
+}
+.content .center-block table td p {
+	padding: 15px;
+	line-height: 1.5;
+	font-size: 14px;
+}
+
+/*intro*/
+.intro {
+	background: #fff;
+}
+/*intro的中间沿用了content*/
+.intro .center-block {
+	padding-bottom: 150px;
+	position: relative;
+}
+.intro .center-block img {
+	position: absolute;
+	left: 50%;	
+}
+h2 {
+	text-align: center;
+	font-size: 36px;
+	line-height: 1.2;
+	padding: 100px 15px 20px;
+}

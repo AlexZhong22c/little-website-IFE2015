@@ -1,0 +1,243 @@
+.content {
+	
+}
+.container {
+	border: 1px solid #e9e9e9;
+	margin-top: 15px;
+}
+
+/*main*/
+.main {
+	width: 710px;
+	float: left;
+}
+.post-show {
+	background: White;
+	padding: 20px;
+	margin-bottom: 15px;
+	position: relative;
+}
+.page-nav {
+	background: #e9e9e9;
+	height: 60px;
+}
+.main h2 {
+	color: #955EA1;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.main h3 {
+	color: #666;
+	font-size: 12px;
+	margin-bottom: 15px;
+	text-align: left;
+}
+.main .article {
+	font-size: 12px;
+}
+.main .author {
+	font-size: 12px;
+	margin-top: 30px;
+	color: #959595;
+	text-align: right;
+}
+.main .side-card {
+	width: 50px;
+	height: 80px;
+	position: absolute;
+	top: 20px;
+	left: -50px;
+	text-align: center;
+	color: #fff;
+}
+.main .side-card .date {
+	height: 40px;
+	line-height: 40px;
+	background: #52385b;
+} 
+.main .side-card .category {
+	height: 40px;
+	line-height: 40px;
+	background-color: #955ea1;
+}
+
+.main .page-nav {
+    font-size: 0;/*为了去除inline-block之间的间隙*/
+    text-align: center;
+    margin-bottom: 330px;
+}
+.main .page-nav a {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 15px;
+    margin: 0 5px;
+    display: inline-block;
+    font-size: 12px;
+}
+.main .page-nav .curr {
+    color: #fff;
+    background-color: #955EA1;
+    font-weight: bold;
+    cursor: text;
+}
+.main .page-nav .disable {
+    color: #ccc;
+    cursor: text;
+}
+
+
+
+
+
+
+
+/*sidebar*/
+.sidebar {
+	width: 260px;
+	float: right;
+}
+
+#search {
+	background: #fff;
+	padding: 20px;
+	position: relative;
+	margin-bottom: 10px;
+}
+#search .text {
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #ddd;
+	padding: 0 0 0 50px;
+	border-right: 0;
+	color: #aaa;
+	/*以背景的形式插入一张图片*/
+	background: url(../image/search.png) no-repeat;
+
+}
+/* 重要！！*/
+#search input:focus {
+    border: 1px solid #333;
+    border-right: 0;
+    color: #333;
+    /*这个可以触发，但是为什么上面的border的颜色没有被触发呢？？*/
+}
+#search button {
+    width: 50px;
+    height: 42px;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+   /* 用绝对定位的好处是？？*/
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+#search input:focus + button {
+    border: 1px solid #333;
+    background-color: #888;
+    border-left: 0;
+}
+
+
+/* 为什么前面不加父级？？*/
+.category {
+    background: #fff;
+    margin-bottom: 10px;
+}
+.category .first {
+    border-top: 1px solid #ddd;
+}
+.category .active, .category a:hover {
+    border-left: 4px solid #52385B;
+}
+.category a {
+    color: #666;
+    font-size: 14px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    border-left: 4px solid #D8BCE2;
+    border-bottom: 1px solid #ddd;
+}
+.sidebar .calender {
+    background-color: #fff;
+    padding: 20px;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.sidebar .calender .year-month {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #52385B;
+}
+.sidebar .calender .year-month a {
+    display: inline-block;
+    color: #52385B;
+}
+.sidebar .calender .year-month .year-month-center {
+    padding: 0 50px;
+    letter-spacing: 3px;
+}
+.sidebar .calender table {
+    margin: 0 auto;
+    color: #888;
+}
+.sidebar .calender table tr {
+    padding: 3px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.sidebar .calender table th, .sidebar .calender table td {
+    padding: 8px;
+    font-weight: normal;
+}
+.sidebar .calender table .today {
+    padding: 4px 3px;
+}
+.sidebar .calender table .today span {
+    display: inline-block;
+    padding: 4px 5px;
+    background-color: #955EA1;
+    color: #fff;
+}
+.sidebar .calender table .festival {
+    font-weight: bold;
+    color: #955EA1;
+}
+
+
+
+.sidebar .tag-cloud {
+    padding: 10px 20px;
+    background-color: #fff;
+}
+.sidebar .tags-head {
+    color: #666;
+    margin-bottom: 15px;
+}
+.sidebar .tags-body {
+    color: #955EA1;
+}
+
+
+
+
+.container .lev1 {
+    font-size: 28px;
+}
+#main-blog .lev2 {
+    font-size: 22px;
+}
+#main-blog .lev3 {
+    font-size: 18px;
+}
+#main-blog .lev4 {
+    font-size: 14px;
+}
+#main-blog .lev5 {
+    font-size: 12px;
+}
